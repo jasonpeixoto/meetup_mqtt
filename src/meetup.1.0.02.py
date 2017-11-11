@@ -1,5 +1,8 @@
-import gc
-import webrepl
+import network
 
-gc.enable()
-webrepl.start()
+wlan = network.WLAN(network.STA_IF)
+wlan.active(True)
+wlan_list = wlan.scan()
+
+for i in wlan_list:
+    print(i)

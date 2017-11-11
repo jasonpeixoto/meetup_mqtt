@@ -1,1 +1,5 @@
-print("Hello World")
+import gc
+import webrepl
+
+gc.enable()
+webrepl.start()
