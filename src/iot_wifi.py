@@ -1,3 +1,7 @@
+# IoT Esp8266 by Jason Peixoto 
+# IOT EcoSystem (c) 
+# www.iotecosystem.com
+# GNU GENERAL PUBLIC LICENSE 3
 import network
 import utime
 
