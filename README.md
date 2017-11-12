@@ -36,7 +36,7 @@ Connect your esp8266 board and verify your port and run the flash
 	./connect.sh
 	./connect.sh path_to_comport
 	
-# kits
+# Kits
 	If you want a kit with a little of everything then get this single kit.
 	Keywish Electronics Basic Starter Kit w/ Breadboard,Jumper wires,Color Led,Resistors,Capacitor,Buzzer for Arduino UNO R3 Mega2560 Mega328 Nano
 	https://www.amazon.com/dp/B071FR41WS/ref=pd_luc_rh_sspa_dk_huc_pt_sub_2?psc=1
@@ -59,6 +59,7 @@ Connect your esp8266 board and verify your port and run the flash
 	(2 pack) ESP8266 microcontroller NodeMCU Lua WIFI with CP2102 USB
 	https://www.amazon.com/gp/product/B071NSSQTL/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1 $12.99
 	
+# License
 
 **Unless required by applicable law or agreed to in writing, this software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 **
