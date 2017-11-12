@@ -1,5 +1,4 @@
-# meetup_mqtt
-#For Linix and Mac
+# Install python modules
 
 	sudo pip install esptool
 	
@@ -27,11 +26,15 @@ Edit **flash.sh** and change **/dev/tty.SLAB_USBtoUART** to use your serial port
 Connect your esp8266 board and verify your port and run the flash
 
 	./flash.sh
-
+	./flash.sh path_to_comport firmware_file
 
 #For Windows
-	https://github.com/nodemcu/nodemcu-flasher
-	
+	https://github.com/nodemcu/nodemcu-flasher	
+
+# Connect
+
+	./connect.sh
+	./connect.sh path_to_comport
 	
 # kits
 	If you want a kit with a little of everything then get this single kit.
