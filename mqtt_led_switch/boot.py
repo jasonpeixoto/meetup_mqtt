@@ -1,9 +1,14 @@
 # IoT Esp8266 Using MicroPython http://micropython.org/
-# IOT EcoSystem (c) is copyrighted by Jason Peixoto 
+# Jason Peixoto
 # http://www.iotecosystem.com
-# Jason Peixoto 
+# IOT EcoSystem (c) is copyrighted by Jason Peixoto
 # GNU GENERAL PUBLIC LICENSE 3
-# This file is executed on every boot (including wake-boot from deepsleep)
+#
+# Unless required by applicable law or agreed to in writing, this software is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#
+#import esp
+#esp.osdebug(None)
 import gc
 import webrepl
 webrepl.start()
