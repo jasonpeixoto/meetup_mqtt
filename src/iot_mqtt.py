@@ -1,4 +1,9 @@
-# https://github.com/micropython/micropython-lib/blob/master/umqtt.simple/umqtt/simple.py
+# IoT Esp8266 Using MicroPython http://micropython.org/
+# IOT EcoSystem (c) is copyrighted by Jason Peixoto 
+# http://www.iotecosystem.com
+# Jason Peixoto 
+# GNU GENERAL PUBLIC LICENSE 3
+# source code is from https://github.com/micropython/micropython-lib/blob/master/umqtt.simple/umqtt/simple.py
 import usocket as socket
 import ustruct as struct
 from ubinascii import hexlify
