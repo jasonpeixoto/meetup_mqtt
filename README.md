@@ -22,6 +22,10 @@
 	
 	
 # kits
+	If you want a kit with a little of everything then get this single kit.
+	Keywish Electronics Basic Starter Kit w/ Breadboard,Jumper wires,Color Led,Resistors,Capacitor,Buzzer for Arduino UNO R3 Mega2560 Mega328 Nano
+	https://www.amazon.com/dp/B071FR41WS/ref=pd_luc_rh_sspa_dk_huc_pt_sub_2?psc=1
+
 	Hilitchi 675-Piece 15 Values 2N2222-S9018 NPN PNP Power General Purpose Transistors Assortment Kit
 	https://www.amazon.com/gp/product/B06Y49GB3F/ref=oh_aui_detailpage_o09_s00?ie=UTF8&psc=1 $14.99
 
