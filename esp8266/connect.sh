@@ -1,8 +1,17 @@
-# Connect esp8266 by Jason Peixoto 
-# IOT EcoSystem (c) 
-# www.iotecosystem.com
-#
-# change /dev/tty.SLAB_USBtoUART to your own serial port
-#
+# IoT Esp8266 Using MicroPython http://micropython.org/
+# Jason Peixoto
+# http://www.iotecosystem.com
+# IOT EcoSystem (c) is copyrighted by Jason Peixoto
 # GNU GENERAL PUBLIC LICENSE 3
-rshell --buffer-size=30 -p /dev/tty.SLAB_USBtoUART 
+#
+# Unless required by applicable law or agreed to in writing, this software is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#
+#!/bin/bash
+
+comport=$1
+if [ $# -ne 1 ]; then
+  comport="/dev/tty.SLAB_USBtoUART"
+fi
+echo "rshell --buffer-size=30 -p $comport"
+rshell --buffer-size=30 -p $comport
