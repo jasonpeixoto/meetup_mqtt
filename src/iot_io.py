@@ -1,3 +1,8 @@
+# IoT Esp8266 Using MicroPython http://micropython.org/
+# IOT EcoSystem (c) is copyrighted by Jason Peixoto 
+# http://www.iotecosystem.com
+# Jason Peixoto 
+# GNU GENERAL PUBLIC LICENSE 3
 # -------------------------------------------------------
 # A0  - ADC0   - TOUT   | D0  - GPIO16 - USER  - WAKE
 # RSV                   | D1  - GPIO05
