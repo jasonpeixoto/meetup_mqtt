@@ -45,6 +45,8 @@
 	https://www.amazon.com/gp/product/B071NSSQTL/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1 $12.99
 	
 
+# Unless required by applicable law or agreed to in writing, this software is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
 ### GNU GENERAL PUBLIC LICENSE
 
