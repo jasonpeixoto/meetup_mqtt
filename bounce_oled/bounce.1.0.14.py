@@ -9,8 +9,8 @@
 #
 import utime
 import bounce_config
-import bounce_oled
-import bounce_random
+import iot_oled
+import iot_random
 
 # version
 bounce_title = "Bouncer V1.0.14"
@@ -24,19 +24,19 @@ max_y = (min_y*3)-1
 # main function
 def main():
 
-    bounce_oled.connect_oled(bounce_config.oled_scl, bounce_config.oled_sda, bounce_config.oled_width, bounce_config.oled_height)
-    bounce_oled.splash_oled(bounce_title)
-    bounce_oled.clear_oled()
+    iot_oled.connect_oled(bounce_config.oled_scl, bounce_config.oled_sda, bounce_config.oled_width, bounce_config.oled_height)
+    iot_oled.splash_oled(bounce_title)
+    iot_oled.clear_oled()
 
     x = min_x
     y = min_y
-    dx = bounce_random.random_dx()
-    dy = bounce_random.random_dy()
+    dx = iot_random.random_dx()
+    dy = iot_random.random_dy()
 
     while True:
 
         # delete old line
-        bounce_oled.drawLine(x, y, x + dx, y + dy, 0)
+        iot_oled.drawLine(x, y, x + dx, y + dy, 0)
 
         # update the dot's position
         x += dx
@@ -44,28 +44,28 @@ def main():
 
         # make the dot bounce off the edges of the screen
         if x < min_x:
-            dx = bounce_random.random_dx()
+            dx = iot_random.random_dx()
             x = min_x
 
         if x > max_x:
-            dx = - bounce_random.random_dx()
+            dx = - iot_random.random_dx()
             x = max_x
 
         if y < min_y:
-            dy = bounce_random.random_dy()
+            dy = iot_random.random_dy()
             y = min_y
 
         if y > max_y:
-            dy = - bounce_random.random_dy()
+            dy = - iot_random.random_dy()
             y = max_y
 
         print ("dx " + str(dx) + ":dy " + str(dy) + ":x " + str(x) + ":y " + str(y))
 
         # draw the line
-        bounce_oled.drawLine(x, y, x + dx, y + dy, 1)
+        iot_oled.drawLine(x, y, x + dx, y + dy, 1)
 
         # show the line on the display
-        bounce_oled.oled_show()
+        iot_oled.oled_show()
 
         # pause for 10 millseconds
         utime.sleep_ms(10)

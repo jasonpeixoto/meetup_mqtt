@@ -9,7 +9,7 @@
 #
 import utime
 import bounce_config
-import bounce_oled
+import iot_oled
 
 # version
 bounce_title = " Bouncer V1.0.4"
@@ -17,13 +17,13 @@ bounce_title = " Bouncer V1.0.4"
 # main function
 def main():
     # connect to the oled
-    bounce_oled.connect_oled(bounce_config.oled_scl, bounce_config.oled_sda, bounce_config.oled_width, bounce_config.oled_height)
+    iot_oled.connect_oled(bounce_config.oled_scl, bounce_config.oled_sda, bounce_config.oled_width, bounce_config.oled_height)
 
     # show splash screen
-    bounce_oled.splash_oled(bounce_title)
+    iot_oled.splash_oled(bounce_title)
 
     # clear the screen
-    bounce_oled.clear_oled()
+    iot_oled.clear_oled()
 
     x = y = 0
     dx = dy = 1
@@ -40,10 +40,10 @@ def main():
         print ("dx " + str(dx) + ":dy " + str(dy) + ":x " + str(x) + ":y " + str(y))
 
         # draw the dot
-        bounce_oled.oled.pixel(x, y, 1)
+        iot_oled.oled.pixel(x, y, 1)
 
         # show the dot on the display
-        bounce_oled.oled_show()
+        iot_oled.oled_show()
 
         # pause for 10 millseconds
         utime.sleep_ms(10)
