@@ -7,7 +7,7 @@
 # Unless required by applicable law or agreed to in writing, this software is distributed on an "AS IS" BASIS,
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #
-import iot_config
+import meetup_config
 import iot_wifi
 import iot_mqtt
 import iot_io
@@ -29,15 +29,15 @@ def sub_callback(topic, msg):
 led_pin = iot_io.D1  # d1
 led = machine.Pin(led_pin, machine.Pin.OUT)
 
-iot_wifi.connect_wifi(iot_config.wifi_ssid, iot_config.wifi_password)
+iot_wifi.connect_wifi(meetup_config.wifi_ssid, meetup_config.wifi_password)
 iot_wifi.wlan.ifconfig()
 
-client = iot_mqtt.MQTTClient(client_id=iot_config.mqtt_client, server=iot_config.mqtt_server)
+client = iot_mqtt.MQTTClient(client_id=meetup_config.mqtt_client, server=meetup_config.mqtt_server)
 client.set_callback(sub_callback)
 client.connect()
 utime.sleep_ms(2000)
 
-client.subscribe(iot_config.mqtt_base_topic)
+client.subscribe(meetup_config.mqtt_base_topic)
 utime.sleep_ms(2000)
 
 while True:

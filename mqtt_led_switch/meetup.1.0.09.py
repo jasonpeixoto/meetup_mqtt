@@ -9,7 +9,7 @@
 #
 import machine
 import iot_io
-import iot_config
+import meetup_config
 import iot_wifi
 import iot_mqtt
 import utime
@@ -18,10 +18,10 @@ import time
 button_pin = iot_io.D2
 button = machine.Pin(button_pin, machine.Pin.IN)
 
-iot_wifi.connect_wifi(iot_config.wifi_ssid, iot_config.wifi_password)
+iot_wifi.connect_wifi(meetup_config.wifi_ssid, meetup_config.wifi_password)
 iot_wifi.wlan.ifconfig()
 
-client = iot_mqtt.MQTTClient(client_id=iot_config.mqtt_client, server=iot_config.mqtt_server)
+client = iot_mqtt.MQTTClient(client_id=meetup_config.mqtt_client, server=meetup_config.mqtt_server)
 
 client.connect()
 utime.sleep_ms(2000)
@@ -34,7 +34,7 @@ while True:
             break
         time.sleep_ms(20)
     last_state = button.value();
-    client.publish(iot_config.mqtt_base_topic, str(last_state))
+    client.publish(meetup_config.mqtt_base_topic, str(last_state))
 
 #utime.sleep_ms(500)
 
