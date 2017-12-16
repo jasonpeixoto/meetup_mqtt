@@ -19,10 +19,10 @@ if [ $# -ne 2 ]; then
   comport="/dev/tty.SLAB_USBtoUART"
   firmware="esp8266-20171101-v1.9.3.bin"
 fi
-firmware="../$firmware"
+firmware="$firmware"
 
 echo "flash.sh $comport $firmware"
 
 cd esptool
-./esptool.py --port $comport erase_flash
-./esptool.py --port $comport --baud 460800 write_flash --flash_size=detect 0 $firmware
+esptool.py --port $comport erase_flash
+esptool.py --port $comport --baud 460800 write_flash --flash_size=detect 0 $firmware
