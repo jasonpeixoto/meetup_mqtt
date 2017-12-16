@@ -24,5 +24,5 @@ firmware="$firmware"
 echo "flash.sh $comport $firmware"
 
 cd esptool
-esptool.py --port $comport erase_flash
-esptool.py --port $comport --baud 460800 write_flash --flash_size=detect 0 $firmware
+esptool --port $comport erase_flash
+esptool --port $comport --baud 460800 write_flash --flash_size=detect 0 $firmware
