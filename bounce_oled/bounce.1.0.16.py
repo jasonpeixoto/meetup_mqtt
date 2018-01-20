@@ -32,8 +32,8 @@ def main():
 
     x = min_x + 1
     y = min_y + 1
-    dx = iot_random.max_dxdy
-    dy = iot_random.max_dxdy
+    dx = bounce_config.max_dxdy
+    dy = bounce_config.max_dxdy
 
     iot_oled.drawRect(min_x, min_y, max_x - min_x + 1, max_y - min_y + 1, 1)
 
@@ -51,25 +51,25 @@ def main():
             x = min_x + 1
             dx = iot_random.random_dxdy()
             if (x + dx >= max_x):
-                dx = iot_random.max_dxdy
+                dx = bounce_config.max_dxdy
 
         if x + dx >= max_x - 1:
             x = max_x - 1
             dx = - iot_random.random_dxdy()
             if (x + dx <= min_x):
-                dx = iot_random.max_dxdy
+                dx = bounce_config.max_dxdy
 
         if y + dy <= min_y + 1:
             y = min_y + 1
             dy = iot_random.random_dxdy()
             if (y + dy >= max_y):
-                dy = iot_random.max_dxdy
+                dy = bounce_config.max_dxdy
 
         if y + dy >= max_y - 1:
             y = max_y - 1
             dy = - iot_random.random_dxdy()
             if (y + dy <= min_y):
-                dy = iot_random.max_dxdy
+                dy = bounce_config.max_dxdy
 
         print ("dx " + str(dx) + ":dy " + str(dy) + ":x " + str(x) + ":y " + str(y))
 

@@ -7,7 +7,7 @@
 # Unless required by applicable law or agreed to in writing, this software is distributed on an "AS IS" BASIS,
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #
-#  HelTec esp32 board Lora
+#  HelTec esp32 oled board Lora
 # ------------------------------------------------------------------------------------------------------
 # 21 - GPIO21 - SDA    - V_SPI_HD             | 16 - GPIO16 - U2_RXD                         - OLED_RST
 # 13 - GPIO13 - ADC2_4 - TOUCH4               | 17 - GPIO17 - U2_TXD

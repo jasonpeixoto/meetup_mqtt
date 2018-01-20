@@ -7,7 +7,7 @@
 # Unless required by applicable law or agreed to in writing, this software is distributed on an "AS IS" BASIS,
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #
-#  HelTec esp32 board
+#  HelTec esp32 oled board
 # ------------------------------------------------------------------------------------------------------
 # 21 - GPIO21 - SDA    - V_SPI_HD                     | 36 - GPIO36 - ADC1_0 - SENSEVP
 # 22 - GPIO22 - SCL    - V_SPI_WP  - U0_RTS           | 37 - GPIO37 - ADC1_1 - CAPVP
